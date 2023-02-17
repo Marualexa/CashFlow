@@ -39,7 +39,7 @@ import Header from "./HeaderMain.vue";
 import Resume from "./Resume/IndexResult.vue";
 import Action from "./ActionModal.vue";
 import MovementMain from "./Movement/MovementMain.vue";
-import Graphic from "./GraphicSvg.vue";
+import Graphic from "./Resume/GraphicSvg.vue";
 
 export default {
   components: {

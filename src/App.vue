@@ -40,7 +40,8 @@ body,
 }
 
 * {
-  --brand-green: #5CB8E4;
-  --brand-blue: #181818;
+  --text-color: #E5E5CB;
+  --backgrount-1: #205295;
+  --backgrount-2: #2c74B3;
 }
 </style>

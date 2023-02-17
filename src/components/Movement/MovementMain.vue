@@ -11,7 +11,6 @@
         :amount='amount'
         @remove="remove"
         >
-        
       </Operacion>
     </div>
   </div>
@@ -43,7 +42,7 @@ const remove = (id) => {
   max-height: 100%;
   padding: 0 8px;
   margin-bottom: 14px;
-  color: black;
+  color: var(--backgrount-1);
 }
 .title {
   margin: 8px 16px 24px 16px;

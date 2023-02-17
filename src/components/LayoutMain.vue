@@ -44,7 +44,7 @@ const showMovements = ref(false);
   flex-direction: column;
   bottom: 0;
   width: 100vw;
-  background-color: #8758FF;
+  background-color: var(--backgrount-1);
   box-shadow: 0 -8px 16px #e5e5e5;
   border-radius: 24px;
 }

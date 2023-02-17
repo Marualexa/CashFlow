@@ -1,7 +1,7 @@
 <template>
   <main>
     <p>{{ labelVisual }}</p>
-    <h1>{{ amountCurrency }}</h1>
+    <h1 :class="{ red: isNegative, green: !isNegative }">{{ amountCurrency }}</h1>
     <div class="graphic">
       <slot name="graphic"></slot>
     </div>
@@ -43,6 +43,10 @@ export default {
     amountCurrency() {
       return currencyFormater.format(this.amountVisual);
     },
+    isNegative() {
+      console.log('amoun', this.amount)
+      return this.amountVisual < 0;
+    }
   },
 };
 </script>
@@ -59,11 +63,10 @@ h1,
 p {
   margin: 0;
   text-align: center;
-  color: #181818;
+  color: var(--backgrount-2);
 }
 h1 {
   margin-top: 14px;
-  color: #16ff00;
 }
 .graphic {
   display: flex;
@@ -72,6 +75,12 @@ h1 {
   width: 100%;
   padding: 48px 24px;
   box-sizing: border-box;
+}
+.red {
+  color: red;
+}
+.green {
+  color: #16ff00;
 }
 </style>
 

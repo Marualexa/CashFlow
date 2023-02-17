@@ -38,7 +38,7 @@ const close = () => emit('close')
 }
 p {
   margin: 0;
-  font-size: 1.5rem;
-  color: var(--brand-blue);
+  font-size: 1.24rem;
+  color: var(--backgrount-2);
 }
 </style>

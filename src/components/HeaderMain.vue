@@ -29,9 +29,9 @@ span {
 }
 h1 {
   font-size: 1.4rem;
-  color: var(--brand-blue);
+  color: var(--backgrount-1);
 }
 h1 span {
-  color: var(--brand-green);
+  color: #16ff00;
 }
 </style>

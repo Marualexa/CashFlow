@@ -1,7 +1,7 @@
 <template>
   <button @click="showModal = true">Agregar movimiento</button>
   <teleport to="#app">
-    <Modal v-show="showModal" @close="showModal = false"> Aqui Formulario 
+    <Modal v-show="showModal" @close="showModal = false">
         <form @submit.prevent="submit">
             <div class="field">
                 <label for="">Titulo</label>
@@ -66,16 +66,21 @@ const submit = () => {
 <style scoped>
 button {
   color: white;
-  font-size: 1.25rem;
-  background-color: var(--brand-blue);
+  font-size: 1.0rem;
+  background-color: var(--backgrount-2);
   border: none;
   width: 100%;
   padding: 24px 60px;
   border-radius: 60px;
   box-sizing: border-box;
 }
+button:hover {
+  background-color: white;
+  color: var(--backgrount-2);
+}
 form {
-  font-size: 1.24rem;
+  font-size: 1.02rem;
+  color: var(--backgrount-1);
   width: 100%;
 }
 form .action {
@@ -93,12 +98,14 @@ label {
 input,
 textarea {
   font-size: 1.24rem;
-  border: 2px solid var(--brand-blue);
+  border: 2px solid var(--backgrount-2);
+  color: var(--backgrount-1);
   border-radius: 8px;
   padding: 8px;
 }
 input[type="number"] {
   text-align: right;
+  color: var(--backgrount-1);
 }
 .radio-label {
   display: flex;
@@ -113,11 +120,11 @@ input[type="radio"] {
   appearance: none;
   width: 1.24rem;
   height: 1.24rem;
-  color: var(--brand-blue);
-  border: 2px solid var(--brand-blue);
+  color: var(--backgrount-2);
+  border: 2px solid var(--backgrount-2);
   border-radius: 50%;
 }
 input[type="radio"]:checked {
-  background-color: var(--brand-blue);
+  background-color: var(--backgrount-2);
 }
 </style>
